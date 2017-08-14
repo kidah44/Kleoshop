@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Kleoshop</title>
+<head>
+  <title>Kleoshop</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
 
-  <body>
+<body>
+
+
+<%= render "layouts/header" %>
+    
     <%= yield %>
-  </body>
+</body>
+
+
+    <script>
+      $(".button-collapse").sideNav();
+    </script>
 </html>
